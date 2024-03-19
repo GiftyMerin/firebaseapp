@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:welcome/signup.dart';
+import 'package:welcome/wlcm.dart';
 
 void main() {
   runApp(const WelcomeP());
@@ -13,6 +15,9 @@ class WelcomeP extends StatefulWidget {
 class _WelcomePState extends State<WelcomeP> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Welcomeh(),
+
+    );
   }
 }

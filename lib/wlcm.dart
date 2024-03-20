@@ -13,15 +13,26 @@ class _WelcomehState extends State<Welcomeh> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.cyan,
-      body: Center(
+      body: Padding(padding: const EdgeInsets.all(40.0),
       child: Column(
         children: [
           Text('Welcome',style: TextStyle(fontSize: 30,color: Colors.black),),
           Text('slash Flutte provides extraordinary flutter tutorials. Do subscribe!',
           style: TextStyle(fontSize: 10),),
+          SizedBox(
+            height: 20,
+          ),
+          Image.network('images/flow1.jpg',height: 200,width: 300,),
+          SizedBox(
+            height: 20,
+          ),
+          TextField(
+
+          ),
         ],
       ),
       ),
-    );
+      );
+
   }
 }
